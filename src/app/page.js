@@ -50,7 +50,7 @@ export default function Page() {
         </div>
       </div>
       <div className="mt-4 lg:mt-0 font-mono text-lg">
-        <h1>TODAYS RACE'S</h1>
+        <h1>TODAYS RACES</h1>
       </div>
       <div id='events' className='flex min-h-screen flex-col items-center p-24 min-w-full'>
         <table className='bg-white w-full max-w-5xl'>
