@@ -64,7 +64,7 @@ export default function Page() {
             {!courses_times && <tr><td>Loading...</td></tr>}
             {courses_times && courses_times.map((item) => (
               <tr key={item.course} className='border-2 border-black'>
-                <td className=' border border-black'>{item.course.replace(/[[\]]/g, '')}</td>
+                <td key={item.course} className=' border border-black'>{item.course.replace(/[[\]]/g, '')}</td>
                 {item.times.map((time) => (
                   <Link href={{
                     pathname: item.course + time.replace(/[^\d.-]+/g, ''),
