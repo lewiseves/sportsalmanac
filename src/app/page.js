@@ -69,7 +69,7 @@ export default function Page() {
                   <Link href={{
                     pathname: item.course + time.replace(/[^\d.-]+/g, ''),
                     query: { course: item.course, off: time },
-                  }}>
+                  }} key={time}>
                     <td key={time} className='pl-16'>{time}</td></Link>
                 ))}
               </tr>
